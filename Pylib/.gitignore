@@ -1,0 +1,43 @@
+# ignore everything in extension/ folder except for the native pyRevit.extension
+extensions/*
+!extensions/pyRevitCore.extension/
+!extensions/pyRevitDevTools.extension/
+!extensions/pyRevitDevHooks.extension/
+!extensions/pyRevitRun.run/
+!extensions/pyRevitTemplates.extension/
+!extensions/pyRevitTags.extension/
+!extensions/pyRevitTools.extension/
+!extensions/pyRevitTutor.extension/
+!extensions/extensions.json
+!extensions/README.md
+
+# ignore visual studio files
+**/.vs
+**/.suo
+**/obj
+**/packages
+**/dev/**/bin
+**/dev/pyRevitLabs/TestResults/
+
+# ignore sphinx build files
+docs/_*
+!docs/_static
+
+# ignore standard python and os temp files
+__py*
+*.db
+.DS_Store
+
+# ignore sphinx files
+*.pyc
+
+# ignore local config file
+*.ini
+
+# Release and installer files
+release/pyrevit*cache
+dist/
+
+# ignore linter configs
+.vscode/.ropeproject/*
+!.vscode/.ropeproject/config.py
